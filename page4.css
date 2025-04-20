@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+    z-index: 10;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .cake {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+  }
+  
+  .top-layer, .middle-layer, .bottom-layer {
+    position: absolute;
+    background: #ff69b4;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .bottom-layer {
+    height: 60px;
+    width: 200px;
+    bottom: 0;
+    background-color: #ff69b4;
+  }
+  
+  .middle-layer {
+    height: 50px;
+    width: 160px;
+    bottom: 60px;
+    background-color: #ff85c1;
+  }
+  
+  .top-layer {
+    height: 40px;
+    width: 120px;
+    bottom: 110px;
+    background-color: #ffa3d7;
+  }
+  
+  .candles {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .candle {
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 2px;
+  }
+  
+  .flame {
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    width: 18px;
+    height: 18px;
+    background-color: orange;
+    border-radius: 50%;
+    animation: flicker 1s infinite;
+    box-shadow: 0 0 15px orange;
+  }
+  
+  @keyframes flicker {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff00ff;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff66cc;
+  }
+  
+  .hidden-message {
+    opacity: 0;
+    margin-top: 30px;
+    font-size: 1.4em;
+    transition: opacity 2s ease-in;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: yellow;
+    border-radius: 50%;
+    animation: sparkle 1s ease-out forwards;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

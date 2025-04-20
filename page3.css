@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    overflow: scroll;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+  }
+  
+  .personal-message {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .personal-message button {
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .personal-message button:hover {
+    background-color: #ff0080;
+  }
+  
+  
+  .memory img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .collage {
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+  }
+  
+  .collage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .collage-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .collage-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hidden {
+    display: none;
+  } 
+.memory {
+    text-align: center;
+    color: white;
+  }
+  
+.memory p {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  .cut-cake-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff00ff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cut-cake-button:hover {
+    background-color: #ff66cc;
+  }
+.t2{
+    font-family:"Roboto";
+    margin:20px;
+}  

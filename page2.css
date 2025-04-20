@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .message {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    animation: fadeIn 5s ease-in-out infinite;
+    text-align: center;
+    width: 100%;
+  }
+
+  .button-link {
+    animation: visible 2s ease-in-out 5s forwards;
+    display: inline-block;
+    margin-top: 400px;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 3px solid white;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0; /* start hidden */
+  }
+  
+  a{
+    color:white;
+    text-decoration:none;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes visible {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
